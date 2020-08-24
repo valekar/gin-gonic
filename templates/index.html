@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ .title }}</title>
+  </head>
+
+  <body>
+    <h1>HTML Video added</h1>
+
+    {{range .videos}}
+    <div>
+      <h4>{{ .Title }}</h4>
+      <p>{{ .Description }}</p>
+    </div>
+
+    {{ end }}
+  </body>
+</html>
