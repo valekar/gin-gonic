@@ -2,8 +2,12 @@
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
-[GIN-debug] GET    /videos/                  --> main.main.func1 (5 handlers)
-[GIN-debug] POST   /videos/                  --> main.main.func2 (5 handlers)
+[GIN-debug] GET    /videos/                  --> main.main.func1 (4 handlers)
+[GIN-debug] POST   /videos/                  --> main.main.func2 (4 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
-[GIN-debug] redirecting request 301: /videos/ --> /videos/
-::1 - [24 Aug 20 17:23 IST] GET /videos/ 200 625.934µs 
+[GIN-debug] redirecting request 307: /videos/ --> /videos/
+::1 - [24 Aug 20 17:55 IST] POST /videos/ 400 193.493µs 
+[GIN-debug] redirecting request 307: /videos/ --> /videos/
+::1 - [24 Aug 20 17:55 IST] POST /videos/ 400 79.651µs 
+[GIN-debug] redirecting request 307: /videos/ --> /videos/
+::1 - [24 Aug 20 17:55 IST] POST /videos/ 200 67.414µs 
