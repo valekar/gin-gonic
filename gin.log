@@ -10,7 +10,19 @@
 
 [GIN-debug] GET    /api/videos               --> main.main.func1 (3 handlers)
 [GIN-debug] POST   /api/videos               --> main.main.func2 (3 handlers)
+[GIN-debug] PUT    /api/videos/:id           --> main.main.func3 (3 handlers)
+[GIN-debug] DELETE /api/videos/:id           --> main.main.func4 (3 handlers)
 [GIN-debug] GET    /view/videos              --> github.com/valekar/gin-gonic/controller.VideoController.ShowAll-fm (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
-::1 - [24 Aug 20 19:36 IST] POST /api/videos 200 244.087µs 
-::1 - [24 Aug 20 19:36 IST] GET /view/videos 200 600.79µs 
+::1 - [24 Aug 20 21:20 IST] POST /api/videos 400 255.628µs 
+::1 - [24 Aug 20 21:20 IST] POST /api/videos 400 151.189µs 
+::1 - [24 Aug 20 21:21 IST] POST /api/videos 200 1.500335ms 
+::1 - [24 Aug 20 21:21 IST] GET /api/videos 200 388.927µs 
+::1 - [24 Aug 20 21:21 IST] POST /api/videos 200 1.408074ms 
+::1 - [24 Aug 20 21:21 IST] GET /api/videos 200 642.113µs 
+::1 - [24 Aug 20 21:24 IST] PUT /api/videos/1 400 81.209µs 
+::1 - [24 Aug 20 21:24 IST] PUT /api/videos/1 200 1.420254ms 
+::1 - [24 Aug 20 21:24 IST] GET /api/videos 200 736.98µs 
+::1 - [24 Aug 20 21:24 IST] DELETE /api/videos/2 400 56.317µs 
+::1 - [24 Aug 20 21:25 IST] DELETE /api/videos/2 200 1.160502ms 
+::1 - [24 Aug 20 21:25 IST] GET /api/videos 200 352.222µs 
